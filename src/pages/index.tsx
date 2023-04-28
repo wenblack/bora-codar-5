@@ -8,6 +8,7 @@ import plusminus from '../assets/plusminus.svg'
 import result from '../assets/result.svg'
 import x from '../assets/x.svg'
 import Image from 'next/image'
+import { NumberButton } from '@/components/NumberButton'
 
 export default function Home() {
   return (
@@ -28,8 +29,8 @@ export default function Home() {
             </div>
           </div>
           <div id="keyboard">
-            <button className="secondary">CE</button>
-            <button>C</button>
+            <NumberButton value={"CE"} secondary />
+            <NumberButton value={'C'} />
             <button>
               <Image src={percent} alt="Percent" />
             </button>
