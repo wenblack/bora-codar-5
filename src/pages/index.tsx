@@ -9,6 +9,7 @@ import result from '../assets/result.svg'
 import x from '../assets/x.svg'
 import Image from 'next/image'
 import { NumberButton } from '@/components/NumberButton'
+import { OperatorButton } from '@/components/OperatorButton'
 
 export default function Home() {
   return (
@@ -31,38 +32,24 @@ export default function Home() {
           <div id="keyboard">
             <NumberButton value={"CE"} secondary />
             <NumberButton value={'C'} />
-            <button>
-              <Image src={percent} alt="Percent" />
-            </button>
-            <button className="tertiary">
-              <Image src={divide} alt="Divide" />
-            </button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button className="tertiary">
-              <Image src={x} alt="Multiplication" />
-            </button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button className="tertiary">
-              <Image src={minus} alt="Minus" />
-            </button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button className="tertiary">
-              <Image src={plus} alt="Plus" />
-            </button>
-            <button>
-              <Image src={plusminus} alt="PlusMinus" />
-            </button>
-            <button>0</button>
-            <button>,</button>
-            <button className="quartiary">
-              <Image src={result} alt="Equals" />
-            </button>
+            <OperatorButton type={percent} primary />
+            <OperatorButton type={divide} />
+            <NumberButton value={7} />
+            <NumberButton value={8} />
+            <NumberButton value={9} />
+            <OperatorButton type={x} />
+            <NumberButton value={4} />
+            <NumberButton value={5} />
+            <NumberButton value={6} />
+            <OperatorButton type={minus} />
+            <NumberButton value={1} />
+            <NumberButton value={2} />
+            <NumberButton value={3} />
+            <OperatorButton type={plus} />
+            <OperatorButton type={plusminus} primary />
+            <NumberButton value={0} />
+            <NumberButton value={','} />
+            <OperatorButton type={result} quartiary />
           </div>
         </div>
       </main>
