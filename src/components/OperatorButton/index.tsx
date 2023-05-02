@@ -1,4 +1,4 @@
-import divide from '../assets/divide.svg'
+import divide from '../../assets/divide.svg'
 import equals from '../assets/equals.svg'
 import minus from '../assets/minus.svg'
 import percent from '../assets/percent.svg'
